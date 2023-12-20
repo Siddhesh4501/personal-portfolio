@@ -1,5 +1,24 @@
+'use client'
+
+
+import { useState } from 'react';
 import './styles/homepage.css'
 export default function Home() {
+
+  const [workSectionIndex, changeWorkSectionIndex] = useState(0);
+
+  const toggleWorkSectionInformation = (index : number)=>{
+    changeWorkSectionIndex(index);
+    console.log(index);
+  }
+
+
+
+
+
+
+
+
   return (
     <>
     <header className="navbar">
@@ -9,16 +28,16 @@ export default function Home() {
       <div className="navtags col-2">
         <ul>
           <li>
-            <span className="neon">01.</span> About
+            <span className="neon sf-mono">01.</span> About
           </li>
           <li>
-          <span className="neon">02.</span> Experience
+          <span className="neon sf-mono">02.</span> Experience
           </li>
           <li>
-          <span className="neon">03.</span>  Projects
+          <span className="neon sf-mono">03.</span>  Projects
           </li>
           <li>
-          <span className="neon">04.</span> Contact
+          <span className="neon sf-mono">04.</span> Contact
           </li>
           <button  className="neon-btn">
             Resume
@@ -29,7 +48,7 @@ export default function Home() {
     <div className="container-1">
 
       <section className="introductoion-section mt-180 section">
-          <p className="neon mb-20">
+          <p className="neon mb-20 sf-mono">
             Hello World! My name is
           </p>
           <h1 className="col-2 mb-20 big-font">
@@ -50,12 +69,12 @@ export default function Home() {
           </button>
       </section>
 
-      <section className="about-section section mt-180">
-        <h3 className='col-2 sub-header-1 mb-40'>
-          <span className="neon">01. </span>
+      <section className="about-section section mb-300">
+        <h2 className='col-2 sub-header-1 mb-40 flex'>
+          <span className="neon sf-mono">01. </span>
           About Me 
           <span className='dash-line'></span>
-        </h3>
+        </h2>
         <div className="about-me-content">
           <div className="intro-para small-font">
             <p>
@@ -68,20 +87,20 @@ export default function Home() {
             Also Ive knowledge of Web Development and created some projects on that using HTML, CSS, Javascript / React.js / Node.js, MongoDB and some other cool libraries and frameworks. m also part of some student organisations and Leading one of them.
             </p>
 
-            <p> 
+            <p className="mb-20"> 
             Here is a list of the technologies that Ive worked with.
             </p>
-              <ul className="skills-list">
-                <li>C || C++</li>
-                <li>C || C++</li>
-                <li>C || C++</li>
-                <li>C || C++</li>
-                <li>C || C++</li>
-                <li>C || C++</li>
-                <li>C || C++</li>
-                <li>C || C++</li>
-                <li>C || C++</li>
-                <li>C || C++</li>
+              <ul className="skills-list neon extra-small-font sf-mono">
+                <li> 01. C || C++</li>
+                <li> 02. Pytnon</li>
+                <li> 03. React</li>
+                <li> 04. HTML || CSS</li>
+                <li> 05. Javascript</li>
+                <li>06. Docker</li>
+                <li> 07. Java</li>
+                <li> 08. SQL</li>
+                <li>09. MongoDB</li>
+                <li>10. Git || Github</li>
               </ul>
           </div>
           <div className="profile-picture">
@@ -90,6 +109,104 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="work-section section mt-180">
+        <h2 className='col-2 sub-header-1 mb-40 flex'>
+          <span className="neon sf-mono">02. </span>
+            Where I have Worked
+          <span className='dash-line'></span>
+        </h2>
+
+        <div className="work-content">
+            <div className="work-content-sidebar">
+                <ul>
+                  <li className={(workSectionIndex == 0 ? 'work-content-btn-selected ' : '') + "work-content-li-btn"}  onClick={()=>toggleWorkSectionInformation(0)} >
+                    <button className="work-content-btn">
+                       BNY Mellon
+                    </button>
+                  </li>
+                  <li className={(workSectionIndex == 1 ? 'work-content-btn-selected ' : '') + "work-content-li-btn"}  onClick={()=>toggleWorkSectionInformation(1)}>
+                    <button className="work-content-btn">
+                      YEC Club
+                    </button>
+                  </li>
+                  <li className={(workSectionIndex == 2 ? 'work-content-btn-selected ' : '') + "work-content-li-btn"}  onClick={()=>toggleWorkSectionInformation(2)}>
+                    <button className="work-content-btn">
+                      MindSpark
+                    </button>
+                  </li>
+                </ul>
+            </div>
+            <div className="work-content-information" style={{ display: workSectionIndex == 0 ? 'block' : 'none' }}>
+              <h3 className="sub-header-2 mb-10">
+                SDE Intern <span className="neon">
+                   @ BNY Mellon
+                </span>
+              </h3>
+              <p className='mb-20'>
+                May 2022- July 2022
+              </p>
+              <ul className="small-font">
+                <li>
+                <span className="neon sf-mono extra-small-font">01. </span>  It was 4 week mentorship programme offered by Microsoft,being the mentee learnt various new technologies, explored Data science.
+                </li>
+                <li>
+                <span className="neon sf-mono extra-small-font">02. </span>  Built a Recommendation engine in the supervision of Microsoft Engineer and got positive feedback from the mentor for the performance throughout the program.
+                </li>
+                <li>
+                <span className="neon sf-mono extra-small-font">03. </span>  Got a great exposure of working in a real time industry environment.
+                </li>
+              </ul>
+            </div>
+            <div className="work-content-information" style={{ display: workSectionIndex == 1? 'block' : 'none' }}>
+              <h3 className="sub-header-2 mb-10">
+                SDE Intern <span className="neon">
+                   @ YEC
+                </span>
+              </h3>
+              <p className='mb-20'>
+                May 2022- July 2022
+              </p>
+              <ul className="small-font">
+                <li>
+                <span className="neon sf-mono extra-small-font">01. </span>  It was 4 week mentorship programme offered by Microsoft,being the mentee learnt various new technologies, explored Data science.
+                </li>
+                <li>
+                <span className="neon sf-mono extra-small-font">02. </span>  Built a Recommendation engine in the supervision of Microsoft Engineer and got positive feedback from the mentor for the performance throughout the program.
+                </li>
+                <li>
+                <span className="neon sf-mono extra-small-font">03. </span>  Got a great exposure of working in a real time industry environment.
+                </li>
+              </ul>
+            </div>
+            <div className="work-content-information" style={{ display: workSectionIndex == 2 ? 'block' : 'none' }}>
+              <h3 className="sub-header-2 mb-10">
+                SDE Intern <span className="neon">
+                   @ Mindspark
+                </span>
+              </h3>
+              <p className='mb-20'>
+                May 2022- July 2022
+              </p>
+              <ul className="small-font">
+                <li>
+                <span className="neon sf-mono extra-small-font">01. </span>  It was 4 week mentorship programme offered by Microsoft,being the mentee learnt various new technologies, explored Data science.
+                </li>
+                <li>
+                <span className="neon sf-mono extra-small-font">02. </span>  Built a Recommendation engine in the supervision of Microsoft Engineer and got positive feedback from the mentor for the performance throughout the program.
+                </li>
+                <li>
+                <span className="neon sf-mono extra-small-font">03. </span>  Got a great exposure of working in a real time industry environment.
+                </li>
+              </ul>
+            </div>
+        </div>
+
+
+
+
+
+
+      </section>
     </div>
     </>
   )
