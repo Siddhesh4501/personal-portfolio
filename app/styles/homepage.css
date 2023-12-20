@@ -1,0 +1,68 @@
+
+@import '../globals.css';
+@import 'helper.css';
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 30px 0 30px;
+    font-size: 0.8rem;
+}
+
+.navtags ul{
+    display: flex;
+    justify-content:space-between;
+    gap: 40px;
+    list-style-type: none;
+    align-items: center;
+}
+
+.section{
+    width: 100%;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.introductoion-section{
+    min-height: 100vh;
+}
+
+.sub-header-1{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dash-line{
+    display: inline-block;
+    width: 500px;
+    background-color: rgb(48, 60, 85);
+    height: 0.1px;
+}
+
+/* .about-section{
+
+} */
+
+.about-me-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills-list li{
+    display: inline-block;
+    width: 50%;
+}
+
+.intro-para{
+    width: 45%;
+}
+.profile-picture{
+    width: 45%;
+    background-color: red;
+}
