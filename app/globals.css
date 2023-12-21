@@ -5,10 +5,13 @@
 :root {
   --max-width: 1000px;
   --default-font-size: 18px;
-  --bg-color: rgb(10, 25, 47);
+  --bg-color-1: rgb(10, 25, 47);
+  --bg-color-2: rgb(23, 42, 69);
   --font-color-1: rgb(136, 146, 176);
   --font-color-2: rgb(204, 214, 246);
   --font-color-3: rgb(100, 255, 218);
+  --font-color-4: rgb(168, 178, 209);;
+  
 }
 
 * {
@@ -25,7 +28,7 @@ body{
   font-style: normal;
   font-family: 'Calibre', sans-serif !important;
   font-size: var(--default-font-size);
-  background-color: var(--bg-color);
+  background-color: var(--bg-color-1);
   color: var(--font-color-1);
 }
 

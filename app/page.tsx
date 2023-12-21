@@ -1,8 +1,7 @@
 'use client'
-
-
 import { useState } from 'react';
 import './styles/homepage.css'
+import ProjectCard from './Components/ProjectCard';
 export default function Home() {
 
   const [workSectionIndex, changeWorkSectionIndex] = useState(0);
@@ -200,12 +199,15 @@ export default function Home() {
               </ul>
             </div>
         </div>
+      </section>
 
-
-
-
-
-
+      <section className="work-section section mt-180">
+        <h2 className='col-2 sub-header-1 mb-40 flex'>
+          <span className="neon sf-mono">03. </span>
+          Some Things Ive Built
+          <span className='dash-line'></span>
+        </h2>
+        <ProjectCard/>
       </section>
     </div>
     </>
