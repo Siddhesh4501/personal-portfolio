@@ -1,8 +1,9 @@
 import './projectCard.css';
 import Image from 'next/image';
 const ProjectCard = () => {
+
     return (
-        <div className="project-card">
+        <div className="project-card mb-100">
             <h6 className="neon sf-mono mb-10  extra-small-font">Featured project</h6>
             <h2 className="mb-20 project-card-name ">Book Desk</h2>
             <div className="project-desc mb-20">

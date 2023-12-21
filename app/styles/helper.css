@@ -52,6 +52,10 @@ button{
     font-size: 0.8rem;
     font-weight: 400;
 }
+.mb-100{
+    margin-bottom: 100px;
+}
+
 .mt-180{
     margin-top: 180px;
 }

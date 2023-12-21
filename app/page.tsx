@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import './styles/homepage.css'
 import ProjectCard from './Components/ProjectCard';
+import ProjectCardrev from './Components/ProjectCardrev'
 export default function Home() {
 
   const [workSectionIndex, changeWorkSectionIndex] = useState(0);
@@ -207,7 +208,10 @@ export default function Home() {
           Some Things Ive Built
           <span className='dash-line'></span>
         </h2>
-        <ProjectCard/>
+        {/* <ProjectCard/> */}
+        <ProjectCardrev reverse={0}/>
+        <ProjectCardrev reverse={1}/>
+        <ProjectCardrev reverse={0}/>
       </section>
     </div>
     </>
