@@ -1,7 +1,8 @@
 'use client'
 import { useState } from 'react';
+import Image from 'next/image';
+
 import './styles/homepage.css'
-import ProjectCard from './Components/ProjectCard';
 import ProjectCardrev from './Components/ProjectCardrev'
 export default function Home() {
 
@@ -45,16 +46,34 @@ export default function Home() {
         </ul>
       </div>
     </header>
-    <div className="container-1">
+    <section className="account-section">
+      <div className="accounts-link">
+          <Image src="/static/icons/github.svg" alt="Github Icon" width={30} height={30} color='red'/>
+          <Image src="/static/icons/linkedin.svg" alt="Github Icon" width={30} height={30} color='red'/>
+          <Image src="/static/icons/leetcode.svg" alt="Github Icon" width={30} height={30} color='red'/>
+          <Image src="/static/icons/codechef.svg" alt="Github Icon" width={30} height={30} color='red'/>
+          <Image src="/static/icons/instagram.svg" alt="Github Icon" width={30} height={30} color='red'/>
+      </div>
+      <div className="vertical-line">
+      </div>
+    </section>
 
+    <section className="email-section">
+      <div className="email-link neon">
+        siddheshdpawar2003@gmail.com
+      </div>
+      <div className="vertical-line">
+      </div>
+    </section>
+    <div className="container-1">
       <section className="introductoion-section mt-180 section">
           <p className="neon mb-20 sf-mono">
             Hello World! My name is
           </p>
-          <h1 className="col-2 mb-20 big-font">
+          <h1 className="col-2 mb-20 extra-big-font">
             Siddhesh Pawar.
           </h1>
-          <h1 className="big-font mb-30">
+          <h1 className="extra-big-font mb-30">
             I love to explore & Code!
           </h1>
           <p className="mb-30 small-font">
@@ -72,7 +91,9 @@ export default function Home() {
       <section className="about-section section mb-300">
         <h2 className='col-2 sub-header-1 mb-40 flex'>
           <span className="neon sf-mono">01. </span>
-          About Me 
+          <span>
+            About Me 
+          </span>
           <span className='dash-line'></span>
         </h2>
         <div className="about-me-content">
@@ -213,6 +234,34 @@ export default function Home() {
         <ProjectCardrev reverse={1}/>
         <ProjectCardrev reverse={0}/>
       </section>
+
+
+      <section className="contact-me-section">
+        <h4 className="neon sf-mono mb-20 small-font">
+          4.0 Whats next?
+        </h4>
+        <h1 className='extra-big-font sub-header-2 mb-40'>
+          Get In Touch
+        </h1>
+        <p className="contact-me-desc mb-20">
+          My inbox is always open. Whether you have a question or just want to say hello, Ill try my best to get back to you! Feel free to mail me about any relevant job updates.
+        </p>
+
+        <button className="neon-btn neon-btn-big">
+            Mail Me
+        </button>
+      </section>
+      
+      <footer className="footer-section mt-180">
+        <h6 className='extra-small-font mb-5 sf-mono'>Made with 🤍 by Siddhesh</h6>
+        <h6 className='extra-small-font mb-10 sf-mono'>Star/Follow on Github</h6>
+      </footer>
+      
+
+
+
+
+
     </div>
     </>
   )

@@ -28,20 +28,26 @@ button{
     background: transparent;
     border-radius: 5px;
     border: 1px solid var(--font-color-3);
+    font-family: "SF Mono";
 }
 
 .neon-btn-big{
-    padding: 1rem 2rem;
-    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    font-size: 0.8rem;
 }
 
 .container-1{
     max-width: var(--max-width); 
     margin: auto;
+    position: relative;
 }
 
-.big-font{
+.extra-big-font{
     font-size: 4rem;
+    font-family: sans-serif;
+}
+.big-font{
+    font-size: 3rem;
     font-family: sans-serif;
 }
 .small-font{
@@ -62,6 +68,9 @@ button{
 
 .mb-300{
     margin-bottom: 300px;
+}
+.mb-5{
+    margin-bottom: 5px;
 }
 .mb-10{
     margin-bottom: 10px;
@@ -85,4 +94,12 @@ button{
     width: 500px;
     background-color: rgb(48, 60, 85);
     height: 0.1px;
+}
+
+
+.vertical-line{
+    display: inline-block;
+    height: 100px;
+    background-color: var(--font-color-4);
+    width: 1px;
 }
