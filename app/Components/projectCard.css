@@ -1,7 +1,32 @@
 @import '../globals.css';
+@import '../styles/helper.css';
+
+.row-reverse{
+    flex-direction: row-reverse;
+}
+
+.text-align-right{
+    text-align: right;
+}
+.ml--25{
+    margin-left: -25%;
+}
+.left-0{
+    left: 0;
+}
 
 .project-card{
     position: relative;
+    display: flex;
+    /* flex-direction: row-reverse; */
+}
+
+.first{
+    width: 50%;
+    /* text-align: right; */
+}
+.second{
+    width: 50%;
 }
 
 .project-card-name{
@@ -9,7 +34,8 @@
     font-size: 2rem;
 }
 .project-desc{
-    max-width: 60%;
+    width: 125%;
+    /* margin-left: -25%; */
     color: var(--font-color-4);
     background-color: var(--bg-color-2);
     font-weight: 400;
@@ -19,8 +45,9 @@
 }
 
 
-.project-tech-stack ul{
+.project-tech-stack{
     display: flex;
+    /* flex-direction: row-reverse; */
     color: var(--font-color-3);
     font-size: rem;
     list-style-type: none;
@@ -31,9 +58,10 @@
     position: absolute;
     top: 0;
     right: 0;
+    /* left : 0; */
     height: fit-content;
     height: 100%;
-    max-width: 70%;
+    max-width: 100%;
     z-index: -2;
     overflow: hidden;
     background-color: var(--font-color-3);
@@ -44,6 +72,17 @@
     height: 100%;
     width: 100%;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 /* .project-img::before {
     content: "";

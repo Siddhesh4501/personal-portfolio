@@ -1,0 +1,7 @@
+@import '../globals.css';
+@import '../styles/helper.css';
+
+.introductoion-section{
+    min-height: 100vh;
+    margin-top: 12rem;
+}

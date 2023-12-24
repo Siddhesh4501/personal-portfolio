@@ -8,6 +8,27 @@
     color: var(--font-color-3);
 }
 
+.section{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.sub-header-1{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-family: "SF Mono";
+    font-weight: 600;
+    white-space:nowrap;
+}
+
+
+.sub-header-2{
+    font-family: 'Calibre', sans-serif !important;
+    color: var(--font-color-2);
+  }
+
 button{
     appearance: none;
     border: none;
@@ -17,8 +38,8 @@ button{
     margin: 0;
     cursor: pointer;
     color: inherit;
-    font-style: initial;
-    font: "SF Mono";
+    font-style: inherit;
+    font-size: 1rem;
 }
 
 .neon-btn{
@@ -59,15 +80,15 @@ button{
     font-weight: 400;
 }
 .mb-100{
-    margin-bottom: 100px;
+    margin-bottom: 6rem;
 }
 
 .mt-180{
-    margin-top: 180px;
+    margin-top: 11rem;
 }
 
 .mb-300{
-    margin-bottom: 300px;
+    margin-bottom: 19rem;
 }
 .mb-5{
     margin-bottom: 5px;
@@ -90,8 +111,8 @@ button{
 
 
 .dash-line{
-    display: inline-block;
-    width: 500px;
+    display: inline;
+    width: 100%;
     background-color: rgb(48, 60, 85);
     height: 0.1px;
 }
@@ -103,3 +124,31 @@ button{
     background-color: var(--font-color-4);
     width: 1px;
 }
+
+
+
+@media only screen and (max-width: 1024px) {
+    .section{
+        margin-left: 125px;
+        margin-right: 125px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+
+
+@media only screen and (max-width: 640px) {
+    .section{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .section{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+  }

@@ -1,0 +1,30 @@
+@import '../globals.css';
+@import '../styles/helper.css';
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 30px 0 30px;
+    font-size: 0.9rem;
+}
+
+.navtags ul{
+    display: flex;
+    justify-content:space-between;
+    gap: 3rem;
+    list-style-type: none;
+    align-items: center;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+
+@media only screen and (max-width: 480px) {
+    .navbar{
+        margin: 25px 10px 0 10px;
+    }
+    .name-logo{
+        display: none;
+    }
+  }

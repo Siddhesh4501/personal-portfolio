@@ -1,0 +1,6 @@
+@import '../globals.css';
+@import '../styles/helper.css';
+
+.footer-section{
+    text-align: center;
+}

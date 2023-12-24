@@ -1,0 +1,17 @@
+{
+    "sectionName" : "About Me",
+    "information": "Hello! Interestingly, I have been a student of Maths in my high school and got introduced to programming in my freshman year at Lovely Professional University. My interest in coding started back in 2020 during first year of B.tech . Since then, I started learning programming languages & solving problems based on data structure and algorithms. Most importantly Im a Problem Solver.",
+    "skills": ["C || C++", 
+            "Pytnon", 
+            "React", 
+            "HTML || CSS", 
+            "Javascript", 
+            "Docker", 
+            "Java", 
+            "SQL", 
+            "MongoDB", 
+            "Git || Github"
+    ],
+    "profilePictureLink" : "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.zeebiz.com%2Fpersonal-finance%2Fnews-bank-fd-vs-corporate-fd-what-is-the-difference-between-the-two-which-is-a-better-option-stst-252044&psig=AOvVaw0K8J25byjEt4-WCibanciU&ust=1703497256996000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMjguPnjp4MDFQAAAAAdAAAAABAD",
+    "email" : "siddheshdpawar2003@gmail.com"
+}

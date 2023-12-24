@@ -1,10 +1,8 @@
-/* @import url(https://db.onlinewebfonts.com/c/fd811cbfe623f3e2be52b981f67a2102?family=Calibre-Regular); */
-
 @import 'styles/fonts.css';
 
 :root {
-  --max-width: 1000px;
-  --default-font-size: 18px;
+  --max-width: 1200px;
+  --default-font-size: 16px;
   --bg-color-1: rgb(10, 25, 47);
   --bg-color-2: rgb(23, 42, 69);
   --font-color-1: rgb(136, 146, 176);
@@ -13,14 +11,14 @@
   --font-color-4: rgb(168, 178, 209);;
   
 }
-
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 html{
-  font-size: 16px;
+  font-size: var(--default-font-size);
+
 }
 body{
   width: 100%;
@@ -32,3 +30,30 @@ body{
   color: var(--font-color-1);
 }
 
+
+@media only screen and (max-width: 1024px) {
+  :root{
+    --default-font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  :root{
+    --default-font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  :root{
+    --default-font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  :root{
+    --default-font-size: 8px;
+  }
+}
+
+
+/* 280px is the lower limit for website */

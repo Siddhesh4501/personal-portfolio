@@ -1,0 +1,22 @@
+{
+    "sectionName" : "Some Things Ive Built",
+    "projects":[
+        {
+            "name" : "Book Desk",
+            "desc" : "An android && ios application which suggests the best study material to the students reviewed by senior students and professors. Here any one can sell/buy/donate the old study material along with sharing the soft-copies.",
+            "projectImgLink" : "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.zeebiz.com%2Fpersonal-finance%2Fnews-bank-fd-vs-corporate-fd-what-is-the-difference-between-the-two-which-is-a-better-option-stst-252044&psig=AOvVaw0K8J25byjEt4-WCibanciU&ust=1703497256996000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMjguPnjp4MDFQAAAAAdAAAAABAD",
+            "techstack" : [
+                "Dart",
+                "Firebase",
+                "Javacript"
+            ],
+            "links" : [
+                {
+                    "name" : "Github",
+                    "iconLink" : "",
+                    "resourceLink" : ""
+                }
+            ]
+        }
+    ]
+}

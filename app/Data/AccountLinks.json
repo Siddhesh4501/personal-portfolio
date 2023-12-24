@@ -1,0 +1,29 @@
+{   "basePath" : "@/public/static/icons/",
+    "accountLinks" : [
+        {
+            "iconName" : "Github",
+            "iconPath" : "gihub.svg",
+            "url" : "www.google.com"
+        },
+        {
+            "iconName" : "LinkdedIn",
+            "iconPath" : "linkedin.svg",
+            "url" : "www.google.com"
+        },
+        {
+            "iconName" : "Leetocode",
+            "iconPath" : "leetcode.svg",
+            "url" : "www.google.com"
+        },
+        {
+            "iconName" : "Instagram",
+            "iconPath" : "instagram.svg",
+            "url" : "www.google.com"
+        },
+        {
+            "iconName" : "Codechef",
+            "iconPath" : "codechef.svg",
+            "url" : "www.google.com"
+        }
+    ]
+}

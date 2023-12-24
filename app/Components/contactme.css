@@ -1,0 +1,15 @@
+@import '../globals.css';
+@import '../styles/helper.css';
+
+.contact-me-section{
+    text-align: center;
+    margin-top: 22rem;
+    margin-bottom: 19rem;
+}
+
+.contact-me-desc{
+    width: 50%;
+    max-width: 500px;
+    margin: 0 auto 60px;
+    font-size: 1.2rem;
+}

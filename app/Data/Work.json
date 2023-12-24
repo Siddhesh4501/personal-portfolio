@@ -1,0 +1,34 @@
+{   "sectionName" : "Where I have Worked",
+    "Companies" : [
+        {
+            "companyName" : "BNY Mellon",
+            "position": "SDE Intern",
+            "duration": "May 2022- July 2022",
+            "description":[
+                "It was 4 week mentorship programme offered by Microsoft,being the mentee learnt various new technologies, explored Data science.",
+                "Built a Recommendation engine in the supervision of Microsoft Engineer and got positive feedback from the mentor for the performance throughout the program.",
+                "Got a great exposure of working in a real time industry environment."
+            ]
+        },
+        {
+            "companyName" : "BNY Mellon",
+            "position": "SDE Intern",
+            "duration": "May 2022- July 2022",
+            "description":[
+                "It was 4 week mentorship programme offered by Microsoft,being the mentee learnt various new technologies, explored Data science.",
+                "Built a Recommendation engine in the supervision of Microsoft Engineer and got positive feedback from the mentor for the performance throughout the program.",
+                "Got a great exposure of working in a real time industry environment."
+            ]
+        },
+        {
+            "companyName" : "BNY Mellon",
+            "position": "SDE Intern",
+            "duration": "May 2022- July 2022",
+            "description":[
+                "It was 4 week mentorship programme offered by Microsoft,being the mentee learnt various new technologies, explored Data science.",
+                "Built a Recommendation engine in the supervision of Microsoft Engineer and got positive feedback from the mentor for the performance throughout the program.",
+                "Got a great exposure of working in a real time industry environment."
+            ]
+        }
+    ]
+}

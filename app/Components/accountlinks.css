@@ -1,0 +1,58 @@
+@import '../globals.css';
+@import '../styles/helper.css';
+
+.account-section{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    bottom: 0;
+    left: 0;
+    margin-left: 45px;
+}
+
+.accounts-link{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.account-link-icons{
+    width: 2rem;
+    height: 2rem;
+}
+
+.email-section{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    bottom: 0;
+    right: 0;
+    margin-right: 45px;
+}
+
+.email-link{
+    transform: rotate(90deg);
+    width: 30px;
+    margin-bottom: 19rem;
+    font-size: 1.2rem;
+    font-family: "SF Mono";
+    
+}
+
+
+@media only screen and (max-width: 640px) {
+    .account-section{
+        display: none;
+    }
+    .email-section{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+  
+}
