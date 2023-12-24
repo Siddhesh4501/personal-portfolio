@@ -1,6 +1,8 @@
 import './navbar.css';
-const Navbar = () => {
+import data from '@/app/Data/Navbar.json'
+const Navbar = async () => {
 
+    console.log(data);
     return (
         <header className="navbar">
             <div className="name-logo">
@@ -8,7 +10,15 @@ const Navbar = () => {
             </div>
             <div className="navtags col-2">
                 <ul>
-                <li>
+
+                {data["links"].map((sectionName, index) => (
+                     <li key={index}>
+                        <a href={"#" + sectionName}>
+                            <span className="neon sf-mono">0{index + 1}.</span> {sectionName}
+                        </a>
+                     </li>
+                ))}
+                {/* <li>
                     <span className="neon sf-mono">01.</span> About
                 </li>
                 <li>
@@ -19,10 +29,13 @@ const Navbar = () => {
                 </li>
                 <li>
                 <span className="neon sf-mono">04.</span> Contact
-                </li>
-                <button  className="neon-btn">
-                    Resume
-                </button>
+                </li> */}
+
+                   <a href={data["resumeLink"]} target="_blank">
+                    <button  className="neon-btn">
+                        Resume
+                    </button>
+                    </a> 
                 </ul>
             </div>
         </header>

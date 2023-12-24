@@ -42,6 +42,12 @@ button{
     font-size: 1rem;
 }
 
+a {
+    color: inherit; /* Inherit text color */
+    text-decoration: none; /* Remove underline */
+    cursor: pointer; /* Change cursor to pointer on hover for better usability */
+  }
+
 .neon-btn{
     padding: 0.7rem 1.2rem;
     color: var(--font-color-3);

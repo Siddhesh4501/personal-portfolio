@@ -1,8 +1,8 @@
-{   "basePath" : "@/public/static/icons/",
+{   "basePath" : "/static/icons/",
     "accountLinks" : [
         {
             "iconName" : "Github",
-            "iconPath" : "gihub.svg",
+            "iconPath" : "github.svg",
             "url" : "www.google.com"
         },
         {
