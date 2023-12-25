@@ -8,8 +8,8 @@
 .text-align-right{
     text-align: right;
 }
-.ml--25{
-    margin-left: -25%;
+.ml--10{
+    margin-left: -10%;
 }
 .left-0{
     left: 0;
@@ -34,12 +34,12 @@
     font-size: 2rem;
 }
 .project-desc{
-    width: 125%;
+    width: 110%;
     /* margin-left: -25%; */
     color: var(--font-color-4);
     background-color: var(--bg-color-2);
     font-weight: 400;
-    padding: 25px;
+    padding: 1.5rem;
     border-radius: 5px;
     box-shadow: rgb(2 12 27 / 70%) 0px 10px 30px -15px;
 }

@@ -1,11 +1,12 @@
 import './aboutme.css';
 import data from '@/app/Data/About.json'
+import globalData from '@/app/Data/global.json'
 import Image from 'next/image';
 
 const AboutMe = () => {
 
     return (
-        <section className="about-section section mb-300">
+        <section className="about-section section mb-300" id="About">
         <h2 className='col-2 sub-header-1 mb-40 flex'>
           <span className="neon sf-mono">01. </span>
           <span>
@@ -42,7 +43,7 @@ const AboutMe = () => {
               </ul>
           </div>
           <div className="profile-picture">
-            <Image src={data["basePath"] + data["profilePictureLink"]} alt="Siddhesh Pawar" width={"100"} height={"100"}/>
+            <Image src={globalData["imagesBasePath"] + data["profilePictureLink"]} alt="Siddhesh Pawar" width={"100000"} height={"100000"}/>
           </div>
         </div>
       </section>

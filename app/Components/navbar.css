@@ -19,6 +19,18 @@
     letter-spacing: 1px;
 }
 
+.nav-resume-btn{
+    display: block;
+}
+
+@media only screen and (max-width: 640px) {
+    .nav-resume-btn{
+        display: none;
+    }
+    .navtags ul{
+        gap: 2rem;
+    }
+}
 
 @media only screen and (max-width: 480px) {
     .navbar{
@@ -26,5 +38,8 @@
     }
     .name-logo{
         display: none;
+    }
+    .navtags{
+        margin: auto;
     }
   }

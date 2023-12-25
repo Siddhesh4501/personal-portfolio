@@ -6,6 +6,7 @@
     justify-content: space-between;
     width: 75%;
     margin: auto;
+    gap: 1rem;
 }
 
 .work-content-sidebar{
@@ -26,6 +27,7 @@
 
 
 .work-content-btn{
+    font-size: 0.8rem;
     padding-left: 1.5rem;
     text-align: left;
 }
@@ -44,7 +46,7 @@
 }
 
 .work-content-information{
-    max-width: 60%;
+    /* transition: height 0.3s ease; */
 }
 
 .work-content-information ul{
@@ -52,5 +54,5 @@
     list-style: none;
 }
 .work-content-information ul li{
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
 }

@@ -45,14 +45,17 @@ body{
 
 @media only screen and (max-width: 640px) {
   :root{
-    --default-font-size: 10px;
+    --default-font-size: 12px;
   }
+
+  /* change position of resume */
 }
 
 @media only screen and (max-width: 480px) {
   :root{
-    --default-font-size: 8px;
+    --default-font-size: 12px;
   }
+  /* change gap in navbar */
 }
 
 

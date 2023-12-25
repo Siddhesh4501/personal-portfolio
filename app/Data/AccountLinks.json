@@ -1,29 +1,28 @@
-{   "basePath" : "/static/icons/",
-    "accountLinks" : [
+{   "accountLinks" : [
         {
             "iconName" : "Github",
             "iconPath" : "github.svg",
-            "url" : "www.google.com"
+            "url" : "https://github.com/Siddhesh4501"
         },
         {
             "iconName" : "LinkdedIn",
             "iconPath" : "linkedin.svg",
-            "url" : "www.google.com"
+            "url" : "https://www.linkedin.com/in/siddhesh-pawar4501"
         },
         {
             "iconName" : "Leetocode",
             "iconPath" : "leetcode.svg",
-            "url" : "www.google.com"
+            "url" : "https://leetcode.com/siddhesh4501"
         },
         {
             "iconName" : "Instagram",
             "iconPath" : "instagram.svg",
-            "url" : "www.google.com"
+            "url" : "https://www.instagram.com/siddhesh4501"
         },
         {
             "iconName" : "Codechef",
             "iconPath" : "codechef.svg",
-            "url" : "www.google.com"
+            "url" : "https://www.codechef.com/users/siddhesh4501"
         }
     ]
 }

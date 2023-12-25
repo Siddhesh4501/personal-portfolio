@@ -5,3 +5,14 @@
     min-height: 100vh;
     margin-top: 12rem;
 }
+
+.homepage-resume-btn{
+    display: none;
+    margin-left: 1rem;
+}
+
+@media only screen and (max-width: 640px) {
+    .homepage-resume-btn{
+        display: inline;
+    }
+}

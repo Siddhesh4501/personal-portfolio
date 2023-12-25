@@ -1,21 +1,25 @@
 import './contactme.css';
 
+import globalData from '@/app/Data/global.json'
+import data from '@/app/Data/Footer.json'
+
 const ContactMe = () => {
     return (
-        <section className="contact-me-section">
+        <section className="contact-me-section" id = "Contact">
         <h4 className="neon sf-mono mb-20 small-font">
-          4.0 Whats next?
+          {data["sectionName"]}
         </h4>
         <h1 className='extra-big-font sub-header-2 mb-40'>
-          Get In Touch
+          {data["tagLine"]}
         </h1>
         <p className="contact-me-desc mb-20">
-          My inbox is always open. Whether you have a question or just want to say hello, Ill try my best to get back to you! Feel free to mail me about any relevant job updates.
+          {data["shortDesc"]}
         </p>
-
-        <button className="neon-btn neon-btn-big">
-            Mail Me
-        </button>
+        <a href={"mailto:" + globalData["email"]} target="_blank">
+          <button className="neon-btn neon-btn-big">
+              Mail Me
+          </button>
+        </a>
       </section>
     )
   };

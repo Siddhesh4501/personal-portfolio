@@ -1,8 +1,8 @@
 import './navbar.css';
 import data from '@/app/Data/Navbar.json'
-const Navbar = async () => {
+import globalData from '@/app/Data/global.json'
 
-    console.log(data);
+const Navbar = async () => {
     return (
         <header className="navbar">
             <div className="name-logo">
@@ -18,24 +18,11 @@ const Navbar = async () => {
                         </a>
                      </li>
                 ))}
-                {/* <li>
-                    <span className="neon sf-mono">01.</span> About
-                </li>
-                <li>
-                <span className="neon sf-mono">02.</span> Experience
-                </li>
-                <li>
-                <span className="neon sf-mono">03.</span>  Projects
-                </li>
-                <li>
-                <span className="neon sf-mono">04.</span> Contact
-                </li> */}
-
-                   <a href={data["resumeLink"]} target="_blank">
-                    <button  className="neon-btn">
+                <a href={globalData["resumeLink"]} target="_blank" className="nav-resume-btn">
+                    <button className="neon-btn">
                         Resume
                     </button>
-                    </a> 
+                </a> 
                 </ul>
             </div>
         </header>

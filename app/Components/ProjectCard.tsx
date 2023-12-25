@@ -1,38 +1,44 @@
 import './projectCard.css';
 import Image from 'next/image';
+import globalData from '@/app/Data/global.json'
 
-const ProjectCard = ({reverse = 0}) => {
-
+const ProjectCard = (props : any) => {
+    const {reverse = 0, projectName, projectDesc, projectTechStack , projectLinks, projectImgLink} = props;
 
     const projectCardClass = `project-card mb-100 ${reverse ? "row-reverse" : ""}`
     const firstHalf = `first ${reverse ? "text-align-right" : ""}`;
-    const projectTechStack = `project-tech-stack sf-mono extra-small-font ${reverse ? "row-reverse" : ""}`;
-    const projectDesc = `project-desc mb-20 ${reverse ? "ml--25" : ""}`;
-    const projectImg = `project-img second ${reverse ? "left-0" : ""}`;
+    const projectTechStackClass = `project-tech-stack sf-mono extra-small-font ${reverse ? "row-reverse" : ""}`;
+    const projectDescClass = `project-desc mb-20 ${reverse ? "ml--10" : ""}`;
+    const projectImgClass = `project-img second ${reverse ? "left-0" : ""}`;
     return (
         <div className={projectCardClass}>
             <div className={firstHalf}>
                 <h6 className="neon sf-mono mb-10 extra-small-font">Featured project</h6>
-                <h2 className="mb-20 project-card-name ">Book Desk</h2>
-                <div className={projectDesc}>
-                An android && ios application which suggests the best study material to the students reviewed by senior students and professors. Here any one can sell/buy/donate the old study material along with sharing the soft-copies.
+                <h2 className="mb-20 project-card-name ">{projectName}</h2>
+                <div className={projectDescClass}>
+                    {projectDesc}
                 </div>
                 <div className="mb-20">
-                    <ul className={projectTechStack}>
-                        <li>Dart</li>
-                        <li>Firebase</li>
+                    <ul className={projectTechStackClass}>
+                        {projectTechStack.map((tech : string,index : number) =>(
+                                <li key={index}>{tech}</li>
+                            ))
+                        }
                     </ul>
                 </div>
                 <div className="project-links">
-                    <ul className={projectTechStack}>
-                        <li>Github</li>
-                        <li>Github</li>
+                    <ul className={projectTechStackClass}>
+                    {projectLinks.map((link : any, index : number) => (
+                        <a href={link["resourceLink"]} key={index} target="_blank">
+                            <Image  className="account-link-icons" src={globalData["iconsBasePath"] + link["iconLink"]} alt={link["name"]} width={0} height={0}/>
+                        </a>
+                    ))}
                     </ul>
                 </div>
             </div>
 
-            <div className={projectImg}>
-                <Image src="/static/img1.jpg" alt="Example" width={500} height={300} />
+            <div className={projectImgClass}>
+                <Image src={globalData["imagesBasePath"] + projectImgLink} alt={projectName} width={500} height={300} />
             </div>
 
         </div>

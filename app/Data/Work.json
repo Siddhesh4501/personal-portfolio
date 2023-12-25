@@ -1,33 +1,32 @@
-{   "sectionName" : "Where I have Worked",
+{   "sectionName" : "Where I've Worked",
     "Companies" : [
         {
             "companyName" : "BNY Mellon",
             "position": "SDE Intern",
-            "duration": "May 2022- July 2022",
+            "duration": "May 2023- July 2023",
             "description":[
-                "It was 4 week mentorship programme offered by Microsoft,being the mentee learnt various new technologies, explored Data science.",
-                "Built a Recommendation engine in the supervision of Microsoft Engineer and got positive feedback from the mentor for the performance throughout the program.",
-                "Got a great exposure of working in a real time industry environment."
+                "Collaborated effectively with a team on an Angular-based data dashboard, improving data visualization efficiency.",
+                "Played a key role in the successful delivery of 2 major project milestones ahead of schedule.",
+                "Gained hands-on experience in full-stack web development, using Angular for frontend, Springboot for backend, and MongoDB for data storage."
             ]
         },
         {
-            "companyName" : "BNY Mellon",
-            "position": "SDE Intern",
-            "duration": "May 2022- July 2022",
+            "companyName" : "YEC",
+            "position": "Web Head",
+            "duration": "Jan 2023- August 2023",
             "description":[
-                "It was 4 week mentorship programme offered by Microsoft,being the mentee learnt various new technologies, explored Data science.",
-                "Built a Recommendation engine in the supervision of Microsoft Engineer and got positive feedback from the mentor for the performance throughout the program.",
-                "Got a great exposure of working in a real time industry environment."
+                "Led a team of 5 developers, ensuring best coding practices, enhancing project outcomes, and fostering team unity.",
+                "Constructed and deployed club website and streamlined deployment via GitHub, reducing overhead by 90%.",
+                "Strengthened club website security and reliability using Hostinger and Firebase, attracting over 1,000 daily users."
             ]
         },
         {
-            "companyName" : "BNY Mellon",
-            "position": "SDE Intern",
-            "duration": "May 2022- July 2022",
+            "companyName" : "MindSpark",
+            "position": "Web Coordinator",
+            "duration": "July 2021- July 2022",
             "description":[
-                "It was 4 week mentorship programme offered by Microsoft,being the mentee learnt various new technologies, explored Data science.",
-                "Built a Recommendation engine in the supervision of Microsoft Engineer and got positive feedback from the mentor for the performance throughout the program.",
-                "Got a great exposure of working in a real time industry environment."
+                "Designed 5+ web pages for MindSpark 21 website, aiding deployment and attracting 100K+ monthly visitors.",
+                "Assisted in the Mindspark website deployment, showcasing technical skills and teamwork."
             ]
         }
     ]

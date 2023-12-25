@@ -1,4 +1,3 @@
 {
-    "links": ["About", "Experience", "Projects", "Contact"],
-    "resumeLink" : "https://www.google.com"
+    "links": ["About", "Experience", "Projects", "Contact"]
 }

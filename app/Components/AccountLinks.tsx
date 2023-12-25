@@ -1,9 +1,7 @@
 import './accountlinks.css';
 import Image from 'next/image';
-import GithubIcon from '@/public/static/icons/github.svg'
-
 import data from '@/app/Data/AccountLinks.json'
-import profile from '@/app/Data/Homepage.json'
+import globalData from '@/app/Data/global.json'
 const AccountLinks = () => {
     console.log(data);
     return (
@@ -12,11 +10,10 @@ const AccountLinks = () => {
             <div className="accounts-link">
 
             {data["accountLinks"].map((account, index) => (
-                <a href={account["url"]} key={index}>
-                    <Image  className="account-link-icons" src={data["basePath"] + account["iconPath"]} alt={account["iconName"]} width={0} height={0}/>
+                <a href={account["url"]} key={index} target="_blank">
+                    <Image  className="account-link-icons" src={globalData["iconsBasePath"] + account["iconPath"]} alt={account["iconName"]} width={0} height={0}/>
                 </a>
                 ))}
-                {/* <Image className="account-link-icons" src={GithubIcon} alt="GithubIcon"/> */}
             </div>
             <div className="vertical-line">
             </div>
@@ -24,7 +21,9 @@ const AccountLinks = () => {
 
             <section className="email-section">
             <div className="email-link neon">
-                {profile["email"]}
+            <a href={"mailto:" + globalData["email"]} target="_blank">
+                {globalData["email"]}
+            </a>
             </div>
             <div className="vertical-line">
             </div>
