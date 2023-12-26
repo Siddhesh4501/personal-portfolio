@@ -36,7 +36,7 @@ const WorkSection = () => {
                 <div key={index} className="work-content-information" style={{ display: workSectionIndex == index ? 'block' : 'none' }}>
                   <h3 className="sub-header-2 mb-10">
                     {company["position"]} <span className="neon">
-                      @{company["companyName"]}
+                      @ {company["companyName"]}
                     </span>
                   </h3>
                   <p className='mb-20'>

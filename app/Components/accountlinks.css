@@ -1,7 +1,7 @@
 @import '../globals.css';
 @import '../styles/helper.css';
 
-.account-section{
+.accounts-section{
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -14,13 +14,14 @@
 
 .accounts-link{
     display: flex;
-    flex-direction: column;
     gap: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
 .account-link-icons{
-    width: 2rem;
-    height: 2rem;
+    width: 1.8rem;
+    height: 1.8rem;
 }
 
 .email-section{
@@ -45,7 +46,7 @@
 
 
 @media only screen and (max-width: 640px) {
-    .account-section{
+    .accounts-section{
         display: none;
     }
     .email-section{

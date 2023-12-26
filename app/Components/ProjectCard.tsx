@@ -39,6 +39,8 @@ const ProjectCard = (props : any) => {
 
             <div className={projectImgClass}>
                 <Image src={globalData["imagesBasePath"] + projectImgLink} alt={projectName} width={500} height={300} />
+                <div className="overlay">
+                </div>
             </div>
 
         </div>

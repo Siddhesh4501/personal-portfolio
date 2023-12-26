@@ -4,7 +4,7 @@
         {
             "projectName" : "User Threads",
             "projectDesc" : "Proficiently accomplish multi-threading in C, including One-One, Many-One, and Many-Many thread model. Optimized large matrix multiplication runtime by 30% through multi threading.",
-            "projectImgLink" : "userThread.jpg",
+            "projectImgLink" : "userThread.png",
             "projectTechStack" : [
                 "C language",
                 "Shell Scripting"
@@ -20,7 +20,7 @@
         {
             "projectName" : "HTTP-Protocol",
             "projectDesc" : "Executed the HTTP/1.1 protocol, incorporating methods like Get, Post, Head, Put, and Delete. Implemented multi threading to support over 1000 simultaneous requests and efficiently handle multiple connection requests.",
-            "projectImgLink" : "httpProtocol.jpg",
+            "projectImgLink" : "httpProtocol.png",
             "projectTechStack" : [
                 "Python",
                 "HTML",
@@ -37,7 +37,7 @@
         {
             "projectName" : "Internship Portal",
             "projectDesc" : "Created a student platform for interview experience sharing and company information access, guiding 150+ students during internship season. Pioneered a QA portal for students, fostering connections and information exchange, while resolving over 200 doubts.",
-            "projectImgLink" : "internshipPortal.jpg",
+            "projectImgLink" : "internshipPortal.png",
             "projectTechStack" : [
                 "React",
                 "MySQL",

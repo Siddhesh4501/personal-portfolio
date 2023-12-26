@@ -23,6 +23,9 @@
     white-space:nowrap;
 }
 
+.flex-col{
+    flex-direction: column;
+}
 
 .sub-header-2{
     font-family: 'Calibre', sans-serif !important;

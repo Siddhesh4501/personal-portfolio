@@ -6,9 +6,8 @@ const AccountLinks = () => {
     console.log(data);
     return (
     <>
-        <section className="account-section">
-            <div className="accounts-link">
-
+        <section className="accounts-section">
+            <div className="accounts-link flex-col">
             {data["accountLinks"].map((account, index) => (
                 <a href={account["url"]} key={index} target="_blank">
                     <Image  className="account-link-icons" src={globalData["iconsBasePath"] + account["iconPath"]} alt={account["iconName"]} width={0} height={0}/>

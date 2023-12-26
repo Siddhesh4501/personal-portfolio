@@ -1,6 +1,16 @@
 @import '../globals.css';
 @import '../styles/helper.css';
-
+@import './accountlinks.css';
 .footer-section{
     text-align: center;
+}
+
+.footer-account-links{
+    display:none;
+}
+
+@media only screen and (max-width: 640px) {
+    .footer-account-links{
+        display: flex;
+    }
 }
