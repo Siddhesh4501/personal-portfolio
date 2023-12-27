@@ -6,7 +6,7 @@ const Footer = () => {
 
 
     return (
-        <footer className="footer-section mt-180">
+        <footer className="footer-section mt-180 mb-20">
           <div className="accounts-link mb-20 footer-account-links">
             {data["accountLinks"].map((account, index) => (
                 <a href={account["url"]} key={index} target="_blank">
@@ -14,8 +14,8 @@ const Footer = () => {
                 </a>
               ))}
           </div>
-        <h6 className='extra-small-font mb-5 sf-mono'>Made with 🤍 by Siddhesh</h6>
-        <a href={globalData["projectRepositoryLink"]} target="_blank">
+        <a href={globalData["projectRepositoryLink"]} target="_blank" className="footer-repo-link">
+          <h6 className='extra-small-font mb-5 sf-mono'>Made with 🤍 by Siddhesh</h6>
           <h6 className='extra-small-font mb-10 sf-mono'>Star/Follow on Github</h6>
         </a>
       </footer>

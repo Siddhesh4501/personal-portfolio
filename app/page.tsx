@@ -1,4 +1,5 @@
 
+'use client'
 
 import './styles/homepage.css'
 import Navbar from './Components/Navbar';
@@ -9,7 +10,23 @@ import WorkSection from './Components/WorkSection';
 import ProjectSection from './Components/ProjectSection';
 import Footer from './Components/Footer';
 import ContactMe from './Components/ContactMe';
+
+import { useEffect } from 'react'
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
+
+
 export default function Home() {
+
+  useEffect(() => {
+    AOS.init({
+         duration: 800,
+         once: false,
+       })
+ }, [])
   return (
     <>
       <Navbar/>

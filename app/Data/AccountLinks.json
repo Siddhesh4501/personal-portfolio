@@ -15,14 +15,14 @@
             "url" : "https://leetcode.com/siddhesh4501"
         },
         {
-            "iconName" : "Instagram",
-            "iconPath" : "instagram.svg",
-            "url" : "https://www.instagram.com/siddhesh4501"
-        },
-        {
             "iconName" : "Codechef",
             "iconPath" : "codechef.svg",
             "url" : "https://www.codechef.com/users/siddhesh4501"
+        },
+        {
+            "iconName" : "Instagram",
+            "iconPath" : "instagram.svg",
+            "url" : "https://www.instagram.com/siddhesh4501"
         }
     ]
 }

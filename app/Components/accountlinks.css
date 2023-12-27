@@ -22,6 +22,11 @@
 .account-link-icons{
     width: 1.8rem;
     height: 1.8rem;
+    transition: transform 0.1s ease-in-out;
+}
+
+.account-link-icons:hover{
+    transform: translateY(-3px);
 }
 
 .email-section{

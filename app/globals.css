@@ -5,12 +5,12 @@
   --default-font-size: 16px;
   --bg-color-1: rgb(10, 25, 47);
   --bg-color-2: rgb(23, 42, 69);
+  --bg-color-3: rgba(100, 255, 218, 0.07);
   --font-color-1: rgb(136, 146, 176);
   --font-color-2: rgb(204, 214, 246);
   --font-color-3: rgb(100, 255, 218);
   --font-color-4: rgb(168, 178, 209);
   --project-image-gradient: rgba(100, 255, 218, 0.5);
-  
 }
 * {
   box-sizing: border-box;
@@ -19,7 +19,7 @@
 }
 html{
   font-size: var(--default-font-size);
-
+  scroll-behavior: smooth;
 }
 body{
   width: 100%;

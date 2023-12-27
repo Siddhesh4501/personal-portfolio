@@ -2,11 +2,14 @@ import './aboutme.css';
 import data from '@/app/Data/About.json'
 import globalData from '@/app/Data/global.json'
 import Image from 'next/image';
+import { Element } from 'react-scroll';
 
 const AboutMe = () => {
 
     return (
-        <section className="about-section section mb-300" id="About">
+      <Element name="About" className="element">
+
+        <section className="about-section section mb-300" id="About" data-aos="fade-up" data-aos-once="true">
         <h2 className='col-2 sub-header-1 mb-40 flex'>
           <span className="neon sf-mono">01. </span>
           <span>
@@ -22,7 +25,7 @@ const AboutMe = () => {
                   return <span key={index}>{info}</span>;
               else{
                 if(info["type"] === "externalLink"){
-                  return <a key={index} href={info["url"]} target="_blank">
+                  return <a key={index} href={info["url"]} target="_blank" className="hover-underline-animation">
                       <span className='neon'>{info["name"]}</span>
                     </a>
                 }
@@ -47,6 +50,8 @@ const AboutMe = () => {
           </div>
         </div>
       </section>
+
+      </Element>
     )
   };
   

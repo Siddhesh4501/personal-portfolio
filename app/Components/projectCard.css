@@ -28,8 +28,14 @@
 }
 
 .project-card-name{
+    display: inline-block;
     color: var(--font-color-2);
     font-size: 2rem;
+    transition: color 0.25s ease-in-out;
+}
+
+.project-card-name:hover{
+    color: var(--font-color-3);
 }
 .project-desc{
     width: 110%;

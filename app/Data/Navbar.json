@@ -1,3 +1,4 @@
 {
-    "links": ["About", "Experience", "Projects", "Contact"]
+    "links": ["About", "Experience", "Projects", "Contact"],
+    "logoURL" : "logo.svg"
 }

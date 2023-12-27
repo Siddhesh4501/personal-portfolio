@@ -8,6 +8,25 @@
     color: var(--font-color-3);
 }
 
+.neon-btn{
+    padding: 0.7rem 1.2rem;
+    color: var(--font-color-3);
+    font-size: 0.8rem;
+    background: transparent;
+    border-radius: 5px;
+    border: 1px solid var(--font-color-3);
+    font-family: "SF Mono";
+}
+
+.neon-btn:hover{
+    background-color: var(--bg-color-3);
+}
+
+.neon-btn-big{
+    padding: 1rem 1.5rem;
+    font-size: 0.8rem;
+}
+
 .section{
     margin-left: 100px;
     margin-right: 100px;
@@ -51,20 +70,6 @@ a {
     cursor: pointer; /* Change cursor to pointer on hover for better usability */
   }
 
-.neon-btn{
-    padding: 0.7rem 1.2rem;
-    color: var(--font-color-3);
-    font-size: 0.8rem;
-    background: transparent;
-    border-radius: 5px;
-    border: 1px solid var(--font-color-3);
-    font-family: "SF Mono";
-}
-
-.neon-btn-big{
-    padding: 1rem 1.5rem;
-    font-size: 0.8rem;
-}
 
 .container-1{
     max-width: var(--max-width); 
@@ -134,7 +139,27 @@ a {
     width: 1px;
 }
 
+.hover-underline-animation {
+    position: relative;
+}
 
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--font-color-3);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
 
 @media only screen and (max-width: 1024px) {
     .section{

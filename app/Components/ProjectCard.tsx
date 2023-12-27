@@ -10,8 +10,9 @@ const ProjectCard = (props : any) => {
     const projectTechStackClass = `project-tech-stack sf-mono extra-small-font ${reverse ? "row-reverse" : ""}`;
     const projectDescClass = `project-desc mb-20 ${reverse ? "ml--10" : ""}`;
     const projectImgClass = `project-img second ${reverse ? "left-0" : ""}`;
+    const animationValue = reverse ? "fade-left" : "fade-right"
     return (
-        <div className={projectCardClass}>
+        <div className={projectCardClass}  data-aos={animationValue}  data-aos-once="true">
             <div className={firstHalf}>
                 <h6 className="neon sf-mono mb-10 extra-small-font">Featured project</h6>
                 <h2 className="mb-20 project-card-name ">{projectName}</h2>

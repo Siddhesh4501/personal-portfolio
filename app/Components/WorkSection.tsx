@@ -2,6 +2,7 @@
 import './worksection.css';
 import { useState } from 'react';
 import data from '@/app/Data/Work.json'
+import { Element } from 'react-scroll';
 const WorkSection = () => {
 
   const [workSectionIndex, changeWorkSectionIndex] = useState(0);
@@ -11,7 +12,8 @@ const WorkSection = () => {
     console.log(index);
   }
     return (
-        <section className="section mt-180" id="Experience">
+      <Element name="Experience" className="element">
+        <section className="section mt-180" id="Experience"  data-aos="fade-up"  data-aos-once="true">
         <h2 className='col-2 sub-header-1 mb-40 flex'>
           <span className="neon sf-mono">02. </span>
             {data["sectionName"]}
@@ -53,6 +55,7 @@ const WorkSection = () => {
                 ))}
         </div>
       </section>
+      </Element>
     )
   };
   

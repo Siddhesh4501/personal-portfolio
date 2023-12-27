@@ -19,6 +19,10 @@
     letter-spacing: 1px;
 }
 
+.navtags ul li:hover{
+    color: var(--font-color-3);
+}
+
 .nav-resume-btn{
     display: block;
 }
