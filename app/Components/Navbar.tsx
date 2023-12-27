@@ -15,7 +15,7 @@ const Navbar = () => {
                 <ul> 
                 {data["links"].map((sectionName, index) => (
                      <li key={index} data-aos="fade-down" data-aos-delay={`${50*index}`}  data-aos-once="true">
-                        <Link to={sectionName} spy={true} smooth={true} duration={100 * (index + 1)} offset={-50} >
+                        <Link to={sectionName} spy={true} smooth={true} duration={100 * (index + 1)} offset={-75} >
                             <span className="neon sf-mono">0{index + 1}.</span> {sectionName}
                         </Link>
                      </li>

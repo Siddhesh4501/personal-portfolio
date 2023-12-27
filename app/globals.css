@@ -22,16 +22,19 @@ html{
   scroll-behavior: smooth;
 }
 body{
-  width: 100%;
   font-weight: 300;
   font-style: normal;
   font-family: 'Calibre', sans-serif !important;
   font-size: var(--default-font-size);
   background-color: var(--bg-color-1);
   color: var(--font-color-1);
+  overflow-x: hidden;
 }
 
-
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 @media only screen and (max-width: 1024px) {
   :root{
     --default-font-size: px;
@@ -49,15 +52,12 @@ body{
     --default-font-size: 14px;
   }
 
-  /* change position of resume */
 }
 
 @media only screen and (max-width: 480px) {
   :root{
     --default-font-size: 12px;
   }
-  /* change gap in navbar */
 }
-
 
 /* 280px is the lower limit for website */

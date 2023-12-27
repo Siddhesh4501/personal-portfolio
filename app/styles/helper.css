@@ -4,6 +4,14 @@
     font-family: "SF Mono";
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+body{
+    -ms-overflow-style: none;  
+    scrollbar-width: none;
+}
+
 .neon{
     color: var(--font-color-3);
 }
