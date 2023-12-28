@@ -9,6 +9,10 @@
     display:none;
 }
 
+.footer-repo-link{
+    display: inline-block;
+}
+
 .footer-repo-link:hover{
     color: var(--font-color-3);
 }

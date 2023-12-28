@@ -72,6 +72,8 @@
 .project-img img{
     height: 100%;
     width: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
 }
 
 .overlay{
@@ -83,7 +85,13 @@
     width: 100%;
     z-index: 1;
     overflow: hidden;
-    background: linear-gradient(var(--project-image-gradient), var(--project-image-gradient));
+    background: linear-gradient(var(--font-color-3), var(--font-color-3));
+    opacity: 0.3;
+    transition: opacity 0.25s ease-in-out;
+}
+
+.overlay:hover{
+    opacity: 0;
 }
 
 @media only screen and (max-width: 380px) {

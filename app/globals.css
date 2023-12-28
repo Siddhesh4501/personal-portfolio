@@ -10,7 +10,6 @@
   --font-color-2: rgb(204, 214, 246);
   --font-color-3: rgb(100, 255, 218);
   --font-color-4: rgb(168, 178, 209);
-  --project-image-gradient: rgba(100, 255, 218, 0.5);
 }
 * {
   box-sizing: border-box;

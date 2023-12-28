@@ -41,12 +41,16 @@
 }
 
 .email-link{
+    font-family: "SF Mono";
     transform: rotate(90deg);
     width: 30px;
     margin-bottom: 19rem;
     font-size: 1.2rem;
-    font-family: "SF Mono";
-    
+    transition: translate 0.1s ease-in-out;
+}
+
+.email-link:hover{
+    translate: 0px -3px;
 }
 
 
