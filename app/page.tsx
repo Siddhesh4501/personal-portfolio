@@ -10,12 +10,11 @@ import WorkSection from './Components/WorkSection';
 import ProjectSection from './Components/ProjectSection';
 import Footer from './Components/Footer';
 import ContactMe from './Components/ContactMe';
-
-import { useEffect, useState } from 'react'
-
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import LoaderComp from './Components/Loader';
+
+import { useEffect, useState } from 'react'
 
 
 
@@ -26,7 +25,7 @@ export default function Home() {
   const [loader ,setLoader] = useState<any>(false);
   const fetchAllData = async()=>{
     setLoader(true);
-    let data = await fetch("/api");
+    let data = await fetch("/api",{ next: { revalidate: 3600 } });
     console.log(data.status);
     data = await data.json();
     setAllData(data);

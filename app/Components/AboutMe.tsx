@@ -53,8 +53,8 @@ const AboutMe : React.FC<AboutMeProps>  = ({AboutData, globalData}) => {
               </ul>
           </div>
           <div className="profile-picture">
-            <Image src="https://i.ibb.co/gVHJphb/1703499046855.jpg" alt="Siddhesh Pawar" width={"100000"} height={"100000"}/>
             {/* <Image src={globalData["imagesBasePath"] + data["profilePictureLink"]} alt="Siddhesh Pawar" width={"100000"} height={"100000"}/> */}
+            <Image src={AboutData["profilePictureLink"]} alt="Siddhesh Pawar" width={"100000"} height={"100000"}/>
           </div>
         </div>
       </section>
