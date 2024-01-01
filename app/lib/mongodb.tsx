@@ -21,7 +21,7 @@ async function connectDB() {
 
   try{
     client = new MongoClient(uri,{
-      serverSelectionTimeoutMS: 600, // 60 seconds timeout
+      serverSelectionTimeoutMS: 60000, // 60 seconds timeout
       serverApi: {
         version: ServerApiVersion.v1,
         strict: true,
