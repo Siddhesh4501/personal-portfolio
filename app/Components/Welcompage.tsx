@@ -1,23 +1,29 @@
 import './welcomepage.css';
-import data from '@/app/Data/Welcompage.json'
-import globalData from '@/app/Data/global.json'
+// import data from '@/app/Data/Welcompage.json'
+// import globalData from '@/app/Data/global.json'
 
-const Welcomepage = () => {
+
+interface WelcomepageProps {
+  WelcomePageData: any/* specify the type for NavbarData */;
+  globalData: any; // Use any if you want to allow any type
+}
+const Welcomepage: React.FC<WelcomepageProps> = ({WelcomePageData, globalData}) => {
     const initialDelay = 1000;
     const delay = 100;
     return (
+        WelcomePageData ? 
         <section className="introductoion-section mt-180 section">
           <p className="neon mb-20 sf-mono" data-aos="fade-right"  data-aos-delay={initialDelay}  data-aos-once="true">
-            {data["shortIntro"]}
+            {WelcomePageData["shortIntro"]}
           </p>
           <h1 className="col-2 mb-20 extra-big-font"  data-aos="fade-right"  data-aos-delay={initialDelay + delay} data-aos-once="true">
-            {data["name"]}.
+            {WelcomePageData["name"]}.
           </h1>
           <h1 className="extra-big-font mb-30"  data-aos="fade-right"  data-aos-delay={initialDelay + delay * 2} data-aos-once="true">
-          {data["tagLine"]}
+          {WelcomePageData["tagLine"]}
           </h1>
           <p className="mb-30 small-font"  data-aos="fade-right"  data-aos-delay={initialDelay + delay * 3} data-aos-once="true">
-          {data["shortDesc"]}
+          {WelcomePageData["shortDesc"]}
           </p>
           <p className="mb-40 small-font"  data-aos="fade-right"  data-aos-delay={initialDelay + delay * 4} data-aos-once="true">
             I am always open for discussions
@@ -36,7 +42,7 @@ const Welcomepage = () => {
                     Resume
                 </button>
             </a> 
-      </section>
+      </section> : <></>
 
     )
   };

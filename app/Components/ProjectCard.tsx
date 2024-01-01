@@ -1,9 +1,10 @@
 import './projectCard.css';
 import Image from 'next/image';
-import globalData from '@/app/Data/global.json'
+// import globalData from '@/app/Data/global.json'
+
 
 const ProjectCard = (props : any) => {
-    const {reverse = 0, projectName, projectDesc, projectTechStack , projectLinks, projectImgLink} = props;
+    const {reverse = 0, projectName, projectDesc, projectTechStack , projectLinks, projectImgLink, globalData} = props;
 
     const projectCardClass = `project-card mb-100 ${reverse ? "row-reverse" : ""}`
     const firstHalf = `first ${reverse ? "text-align-right" : ""}`;
