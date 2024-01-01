@@ -28,7 +28,7 @@ export async function GET() {
         return new Response(JSON.stringify(data), {status : 200, headers: { 'Content-Type': 'application/json' }});
 
     } catch (error) {
-        console.error(error);
+        // console.error(error);
         return new Response(JSON.stringify({error}), {status : 400,  headers: { 'Content-Type': 'application/json' }});
     } finally {
         await disconnectDB();

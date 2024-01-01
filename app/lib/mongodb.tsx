@@ -18,21 +18,28 @@ async function connectDB() {
   if (client && isConnected) {
     return client;
   }
+
+  try{
+    client = new MongoClient(uri,{
+      serverSelectionTimeoutMS: 600, // 60 seconds timeout
+      serverApi: {
+        version: ServerApiVersion.v1,
+        strict: true,
+        deprecationErrors: true,
+      }
+      },);
   
+    await client.connect().catch((error)=>{
+      throw new Error(error);
+    });
+    database = client.db('My-Portfolio-Data');
+    return client;
+  }
+  catch(error){
+    // console.log("in mongodb error");
+    throw new Error("Could not connect to DB");
+  }
 
-  client = new MongoClient(uri,{
-    serverSelectionTimeoutMS: 60000, // 60 seconds timeout
-    serverApi: {
-      version: ServerApiVersion.v1,
-      strict: true,
-      deprecationErrors: true,
-    }
-    },);
-
-  await client.connect();
-  database = client.db('My-Portfolio-Data');
-
-  return client;
 }
 
 async function disconnectDB() {

@@ -15,7 +15,7 @@ import 'aos/dist/aos.css';
 import LoaderComp from './Components/Loader';
 
 import { useEffect, useState } from 'react'
-
+import {  toast } from 'react-toastify';
 
 
 
@@ -23,15 +23,31 @@ export default function Home() {
 
   const [allData ,setAllData] = useState<any>({});
   const [loader ,setLoader] = useState<any>(false);
+
+  const notify = () => toast.error('Check your connection and try again later!', {
+    position: "top-right",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "dark",
+    });
+    
+
   const fetchAllData = async()=>{
     setLoader(true);
     let data = await fetch("/api",{ next: { revalidate: 3600 } });
-    console.log(data.status);
-    data = await data.json();
-    setAllData(data);
+    if(data.status == 400){
+      notify();
+    }
+    else{
+      data = await data.json();
+      setAllData(data);
+    }
     setLoader(false);
   }
-
   useEffect(() => {
     fetchAllData();
     AOS.init({
@@ -40,6 +56,7 @@ export default function Home() {
        });
  }, [])
   return (
+    
     loader ?
       <LoaderComp/>
     :
